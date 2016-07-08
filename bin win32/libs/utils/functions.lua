@@ -351,9 +351,11 @@ end
 
 -- [[ Connection ]]
 
-httpGet = function (url, uri)
+httpGet = function (url, uri, includeHeaders)
+	local _url, _uri = match(url, "http://([^/]+)/?(.*)")
 
-	url = match(url, "http://(.-)/?$") or url
+	url = _url or url
+	uri = _uri or uri
 
 	local ip = Network.getIp(url)
 
@@ -362,9 +364,7 @@ httpGet = function (url, uri)
 	local tcp = TcpSocket()
 	local success, err = tcp:connect(ip, 80)
 
-	if not success then return nil, err, "on connect" end
-
-	printn(url, uri)
+	if not success then return nil, "on connect", err end
 
 	success, err = tcp:send("GET /" .. (uri or "") .. 
 	" HTTP/1.0\r\nFrom: nobody@sorry.org\r\n" ..
@@ -372,7 +372,7 @@ httpGet = function (url, uri)
 	"Content-Length: 0\r\nContent-Type: " ..
 	"application/x-www-form-urlencoded\r\n\r\n")
 
-	if not success then return nil, err, "on send" end
+	if not success then return nil, "on send", err end
 
 	local ret = {}
 
@@ -389,5 +389,16 @@ httpGet = function (url, uri)
 		return table.concat(ret, "")
 	end
 
-	return table.concat(ret, ""), err
+	data = table.concat(ret, '')
+
+	if not includeHeaders then
+		for i = 1, #data do
+			if sub(data, i, i + 3) == '\r\n\r\n' then
+				data = data:sub(i + 4)
+				break
+			end
+		end
+	end
+
+	return data
 end

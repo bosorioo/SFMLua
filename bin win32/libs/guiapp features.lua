@@ -1,7 +1,7 @@
 Console.open()
 Console.setPauseOnError()
 
-require "framework"
+require "libs"
 
 local app = Application(800, 600, "Application Example")
 
