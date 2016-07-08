@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/SFML/Config.hpp
+TargetConditionals.h
+../include/SFML/TargetConditionals.h
+
+C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/src/SFML/Main/MainWin32.cpp
+SFML/Config.hpp
+-
+windows.h
+-
+

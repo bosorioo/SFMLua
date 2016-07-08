@@ -1,0 +1,93 @@
+Console.open()
+Console.setPauseOnExit()
+
+local continue = true
+local function writeHeader(data, outputPath)
+	local out = io.open(WorkDir .. outputPath, 'w')
+	if not out then
+		out = io.open(outputPath, 'w')
+		if not out then
+			return printn("Couldn't create output file.")
+		end
+	end
+	local str = {}
+	local nowhitespacedata = data:gsub('%s+', ' ')
+	local hexPerLine = 12
+	local comma = false
+	for i = 1, #nowhitespacedata do
+		if i % hexPerLine == 1 then
+			str[#str + 1] = '\t'
+		end
+		if comma then
+			str[#str + 1] = ', '
+		end
+		str[#str + 1] = string.format('0x%.2X', string.byte(string.sub(nowhitespacedata, i, i)))
+		comma = true
+		if i % hexPerLine == 0 then
+			str[#str + 1] = ',\n'
+			comma = false
+		end
+	end
+	local stars = string.rep('*', 12)
+	local file = outputPath:match(".+[\\/](.+)$") or outputPath
+	local line = 0
+	file = file:upper():gsub('[%. ]', '_')
+	out:write(string.format([[/%s
+* Generated with lua2header.lua
+* Original source code:
+*
+%s
+*
+%s/
+
+#ifndef %s
+#define %s
+
+const char lua_script_%s[] = {
+%s
+};
+
+#endif]],
+	stars, string.gsub(data, '[^\n]+', function(str)
+		line = line + 1
+		return string.format('* %d - %s', line, str)
+	end), stars,
+	file, file, file:lower():sub(1, -7), table.concat(str)))
+	print("Done.\n")
+	out:close()
+end
+
+function getUserInput()
+    if Arguments[3] then
+        local ret = Arguments[3]
+        table.remove(Arguments, 3)
+        return ret
+    end
+    return Console.getInput()
+end
+
+while continue do
+
+	print("Enter a file path to convert to a C header file: ")
+	
+	local path = Console.getInput()
+
+	if path == '' then
+		printn('Bye...')
+		System.sleep(800)
+		os.exit()
+	end
+	
+	if path:sub(1, 1) == '"' then path = path:sub(2) end
+	if path:sub(-1) == '"' then path = path:sub(1, -2) end
+	
+	local file = io.open(path, 'r') or io.open(WorkDir .. path, 'r')
+
+	if file then
+		writeHeader(file:read('*a'), path .. '.h')
+		file:close()
+	else
+		printn("Couldn't open specified file (" .. path .. ").")
+	end
+
+end

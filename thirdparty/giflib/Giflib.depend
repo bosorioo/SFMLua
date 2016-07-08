@@ -1,0 +1,70 @@
+# depslib dependency file v1.0
+1451609771 source:c:\users\bruno\dropbox\sfml project\thirdparty\giflib\dgif_lib.c
+	<stdlib.h>
+	<limits.h>
+	<stdint.h>
+	<fcntl.h>
+	<unistd.h>
+	<stdio.h>
+	<string.h>
+	<io.h>
+	"gif_lib.h"
+	"gif_lib_private.h"
+
+1420584849 c:\users\bruno\dropbox\sfml project\thirdparty\giflib\gif_lib.h
+	<stddef.h>
+	<stdbool.h>
+
+1400240813 c:\users\bruno\dropbox\sfml project\thirdparty\giflib\gif_lib_private.h
+	"gif_lib.h"
+	"gif_hash.h"
+
+1400240813 c:\users\bruno\dropbox\sfml project\thirdparty\giflib\gif_hash.h
+	<unistd.h>
+	<stdint.h>
+
+1400240813 source:c:\users\bruno\dropbox\sfml project\thirdparty\giflib\egif_lib.c
+	<unistd.h>
+	<stdint.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<fcntl.h>
+	<io.h>
+	<sys/types.h>
+	<sys/stat.h>
+	"gif_lib.h"
+	"gif_lib_private.h"
+
+1400240813 source:c:\users\bruno\dropbox\sfml project\thirdparty\giflib\gif_err.c
+	<stdio.h>
+	"gif_lib.h"
+	"gif_lib_private.h"
+
+1400240813 source:c:\users\bruno\dropbox\sfml project\thirdparty\giflib\gif_font.c
+	<string.h>
+	"gif_lib.h"
+
+1400240813 source:c:\users\bruno\dropbox\sfml project\thirdparty\giflib\gif_hash.c
+	<unistd.h>
+	<stdint.h>
+	<stdlib.h>
+	<fcntl.h>
+	<stdio.h>
+	<string.h>
+	"gif_lib.h"
+	"gif_hash.h"
+	"gif_lib_private.h"
+
+1420369186 source:c:\users\bruno\dropbox\sfml project\thirdparty\giflib\gifalloc.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"gif_lib.h"
+
+1400240813 source:c:\users\bruno\dropbox\sfml project\thirdparty\giflib\quantize.c
+	<stdlib.h>
+	<stdio.h>
+	"gif_lib.h"
+	"gif_lib_private.h"
+

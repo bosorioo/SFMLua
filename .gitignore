@@ -27,6 +27,9 @@
 *.out
 *.app
 
+# Codeblock Folder
+codeblocks/
+
 # =========================
 # Operating System Files
 # =========================

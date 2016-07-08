@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="sfml-system" />
+	<File name="..\include\SFML\Window\Joystick.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="30" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\Graphics\Texture.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4327" topLine="141" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\Network\Socket.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="79" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\Window\Window.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="724" topLine="404" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\Window\JoystickImpl.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="667" topLine="25" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\System\Clock.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="33" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\Window\Win32\JoystickImpl.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="6172" topLine="176" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\Window\Win32\VideoModeImpl.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="42" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\Window\Win32\WindowImplWin32.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="15471" topLine="517" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\Window\WindowImpl.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\Window\WindowImpl.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4475" topLine="128" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\Window\Joystick.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1654" topLine="31" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\Network\UdpSocket.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2139" topLine="52" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\Network\Win32\SocketImpl.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="665" topLine="24" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\Graphics\Image.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3355" topLine="111" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\Window\JoystickManager.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3209" topLine="78" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\Window\JoystickManager.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1421" topLine="70" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\System\Win32\ClockImpl.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1305" topLine="29" />
+		</Cursor>
+	</File>
+	<File name="..\src\SFML\Window\Win32\InputImpl.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="227" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

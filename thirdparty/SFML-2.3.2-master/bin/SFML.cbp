@@ -1,0 +1,1676 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SFML" />
+		<Option makefile_is_custom="1" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="all">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 all' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 all &gt; $(CMD_NULL)' />
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 install/local' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 install/strip' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 edit_cache' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 install' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 rebuild_cache' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option type="4" />
+				<Option compiler="gcc" />
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 list_install_components' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="sfml-system">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/lib/libsfml-system-s.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/src" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/System/Makefile&quot;  VERBOSE=1 sfml-system ' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/System/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/System/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/System/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/System/Makefile&quot;  VERBOSE=1 sfml-system  &gt; $(CMD_NULL)' />
+				</MakeCommands>
+			</Target>
+			<Target title="sfml-system/fast">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/lib/libsfml-system-s.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/src" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/System/Makefile&quot;  VERBOSE=1 sfml-system/fast' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/System/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/System/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/System/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="sfml-main">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/lib/libsfml-main.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/src" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Main/Makefile&quot;  VERBOSE=1 sfml-main' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Main/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Main/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Main/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="sfml-main/fast">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/lib/libsfml-main.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/src" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Main/Makefile&quot;  VERBOSE=1 sfml-main/fast' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Main/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Main/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Main/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="sfml-window">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/lib/libsfml-window-s.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add option="-DUNICODE" />
+					<Add option="-D_UNICODE" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/src" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Window/Makefile&quot;  VERBOSE=1 sfml-window' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Window/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Window/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Window/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="sfml-window/fast">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/lib/libsfml-window-s.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add option="-DUNICODE" />
+					<Add option="-D_UNICODE" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/src" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Window/Makefile&quot;  VERBOSE=1 sfml-window/fast' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Window/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Window/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Window/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="sfml-network">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/lib/libsfml-network-s.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/src" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Network/Makefile&quot;  VERBOSE=1 sfml-network' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Network/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Network/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Network/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="sfml-network/fast">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/lib/libsfml-network-s.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/src" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Network/Makefile&quot;  VERBOSE=1 sfml-network/fast' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Network/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Network/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Network/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="sfml-graphics">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/lib/libsfml-graphics-s.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add option="-DSTBI_FAILURE_USERMSG" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/extlibs/headers/freetype2" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/extlibs/headers/jpeg" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/extlibs/headers/stb_image" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/src" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Graphics/Makefile&quot;  VERBOSE=1 sfml-graphics' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Graphics/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Graphics/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Graphics/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="sfml-graphics/fast">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/lib/libsfml-graphics-s.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add option="-DSTBI_FAILURE_USERMSG" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/extlibs/headers/freetype2" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/extlibs/headers/jpeg" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/extlibs/headers/stb_image" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/src" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Graphics/Makefile&quot;  VERBOSE=1 sfml-graphics/fast' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Graphics/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Graphics/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Graphics/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="sfml-audio">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/lib/libsfml-audio-s.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add option="-DOV_EXCLUDE_STATIC_CALLBACKS" />
+					<Add option="-DFLAC__NO_DLL" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/extlibs/headers" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/extlibs/headers/AL" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/src" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Audio/Makefile&quot;  VERBOSE=1 sfml-audio' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Audio/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Audio/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Audio/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="sfml-audio/fast">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/lib/libsfml-audio-s.a" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="" />
+				<Option object_output="./" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add option="-DOV_EXCLUDE_STATIC_CALLBACKS" />
+					<Add option="-DFLAC__NO_DLL" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/extlibs/headers" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/extlibs/headers/AL" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/src" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Audio/Makefile&quot;  VERBOSE=1 sfml-audio/fast' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Audio/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Audio/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/src/SFML/Audio/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="ftp">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/ftp/ftp.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/ftp" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/ftp/Makefile&quot;  VERBOSE=1 ftp' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/ftp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/ftp/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/ftp/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="ftp/fast">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/ftp/ftp.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/ftp" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/ftp/Makefile&quot;  VERBOSE=1 ftp/fast' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/ftp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/ftp/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/ftp/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="opengl">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/opengl/opengl.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/opengl" />
+				<Option object_output="./" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/opengl/Makefile&quot;  VERBOSE=1 opengl' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/opengl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/opengl/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/opengl/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="opengl/fast">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/opengl/opengl.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/opengl" />
+				<Option object_output="./" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/opengl/Makefile&quot;  VERBOSE=1 opengl/fast' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/opengl/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/opengl/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/opengl/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="pong">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/pong/pong.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/pong" />
+				<Option object_output="./" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/pong/Makefile&quot;  VERBOSE=1 pong' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/pong/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/pong/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/pong/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="pong/fast">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/pong/pong.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/pong" />
+				<Option object_output="./" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/pong/Makefile&quot;  VERBOSE=1 pong/fast' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/pong/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/pong/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/pong/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="shader">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/shader/shader.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/shader" />
+				<Option object_output="./" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/shader/Makefile&quot;  VERBOSE=1 shader' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/shader/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/shader/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/shader/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="shader/fast">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/shader/shader.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/shader" />
+				<Option object_output="./" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/shader/Makefile&quot;  VERBOSE=1 shader/fast' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/shader/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/shader/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/shader/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="sockets">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sockets/sockets.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sockets" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sockets/Makefile&quot;  VERBOSE=1 sockets' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sockets/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sockets/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sockets/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="sockets/fast">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sockets/sockets.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sockets" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sockets/Makefile&quot;  VERBOSE=1 sockets/fast' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sockets/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sockets/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sockets/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="sound">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound/sound.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound/Makefile&quot;  VERBOSE=1 sound' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="sound/fast">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound/sound.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound/Makefile&quot;  VERBOSE=1 sound/fast' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="sound-capture">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound_capture/sound-capture.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound_capture" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound_capture/Makefile&quot;  VERBOSE=1 sound-capture' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound_capture/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound_capture/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound_capture/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="sound-capture/fast">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound_capture/sound-capture.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound_capture" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound_capture/Makefile&quot;  VERBOSE=1 sound-capture/fast' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound_capture/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound_capture/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/sound_capture/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="voip">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/voip/voip.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/voip" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/voip/Makefile&quot;  VERBOSE=1 voip' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/voip/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/voip/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/voip/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="voip/fast">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/voip/voip.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/voip" />
+				<Option object_output="./" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/voip/Makefile&quot;  VERBOSE=1 voip/fast' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/voip/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/voip/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/voip/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="window">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/window/window.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/window" />
+				<Option object_output="./" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/window/Makefile&quot;  VERBOSE=1 window' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/window/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/window/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/window/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="window/fast">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/window/window.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/window" />
+				<Option object_output="./" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/window/Makefile&quot;  VERBOSE=1 window/fast' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/window/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/window/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/window/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="win32">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/win32/win32.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/win32" />
+				<Option object_output="./" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/win32/Makefile&quot;  VERBOSE=1 win32' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/win32/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/win32/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/win32/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="win32/fast">
+				<Option output="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/win32/win32.exe" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/win32" />
+				<Option object_output="./" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include-fixed" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/backward" />
+					<Add directory="c:/mingw/bin/../lib/gcc/mingw32/4.8.1/include/c++/mingw32" />
+				</Compiler>
+				<MakeCommands>
+					<Build command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/win32/Makefile&quot;  VERBOSE=1 win32/fast' />
+					<CompileFile command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/win32/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
+					<Clean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/win32/Makefile&quot;  VERBOSE=1 clean' />
+					<DistClean command='C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/Bruno/Dropbox/SFML Project/thirdparty/SFML-2.3.2-master/bin/examples/win32/Makefile&quot;  VERBOSE=1 clean' />
+					<AskRebuildNeeded command="$make -q -f $makefile $target" />
+					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="../CMakeLists.txt" />
+		<Unit filename="../cmake/Config.cmake" />
+		<Unit filename="../cmake/Macros.cmake" />
+		<Unit filename="../cmake/Modules/FindFLAC.cmake" />
+		<Unit filename="../cmake/Modules/FindFreetype.cmake" />
+		<Unit filename="../cmake/Modules/FindVorbis.cmake" />
+		<Unit filename="../examples/CMakeLists.txt" />
+		<Unit filename="../examples/ftp/CMakeLists.txt" />
+		<Unit filename="../examples/ftp/Ftp.cpp">
+			<Option target="ftp" />
+		</Unit>
+		<Unit filename="../examples/opengl/CMakeLists.txt" />
+		<Unit filename="../examples/opengl/OpenGL.cpp">
+			<Option target="opengl" />
+		</Unit>
+		<Unit filename="../examples/pong/CMakeLists.txt" />
+		<Unit filename="../examples/pong/Pong.cpp">
+			<Option target="pong" />
+		</Unit>
+		<Unit filename="../examples/shader/CMakeLists.txt" />
+		<Unit filename="../examples/shader/Effect.hpp">
+			<Option target="shader" />
+		</Unit>
+		<Unit filename="../examples/shader/Shader.cpp">
+			<Option target="shader" />
+		</Unit>
+		<Unit filename="../examples/sockets/CMakeLists.txt" />
+		<Unit filename="../examples/sockets/Sockets.cpp">
+			<Option target="sockets" />
+		</Unit>
+		<Unit filename="../examples/sockets/TCP.cpp">
+			<Option target="sockets" />
+		</Unit>
+		<Unit filename="../examples/sockets/UDP.cpp">
+			<Option target="sockets" />
+		</Unit>
+		<Unit filename="../examples/sound/CMakeLists.txt" />
+		<Unit filename="../examples/sound/Sound.cpp">
+			<Option target="sound" />
+		</Unit>
+		<Unit filename="../examples/sound_capture/CMakeLists.txt" />
+		<Unit filename="../examples/sound_capture/SoundCapture.cpp">
+			<Option target="sound-capture" />
+		</Unit>
+		<Unit filename="../examples/voip/CMakeLists.txt" />
+		<Unit filename="../examples/voip/Client.cpp">
+			<Option target="voip" />
+		</Unit>
+		<Unit filename="../examples/voip/Server.cpp">
+			<Option target="voip" />
+		</Unit>
+		<Unit filename="../examples/voip/VoIP.cpp">
+			<Option target="voip" />
+		</Unit>
+		<Unit filename="../examples/win32/CMakeLists.txt" />
+		<Unit filename="../examples/win32/Win32.cpp">
+			<Option target="win32" />
+		</Unit>
+		<Unit filename="../examples/window/CMakeLists.txt" />
+		<Unit filename="../examples/window/Window.cpp">
+			<Option target="window" />
+		</Unit>
+		<Unit filename="../include/SFML/Audio/AlResource.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../include/SFML/Audio/Export.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../include/SFML/Audio/InputSoundFile.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../include/SFML/Audio/Listener.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../include/SFML/Audio/Music.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../include/SFML/Audio/OutputSoundFile.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../include/SFML/Audio/Sound.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../include/SFML/Audio/SoundBuffer.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../include/SFML/Audio/SoundBufferRecorder.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../include/SFML/Audio/SoundFileFactory.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../include/SFML/Audio/SoundFileFactory.inl">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../include/SFML/Audio/SoundFileReader.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../include/SFML/Audio/SoundFileWriter.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../include/SFML/Audio/SoundRecorder.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../include/SFML/Audio/SoundSource.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../include/SFML/Audio/SoundStream.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/BlendMode.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/CircleShape.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/Color.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/ConvexShape.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/Drawable.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/Export.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/Font.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/Glyph.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/Image.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/PrimitiveType.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/Rect.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/Rect.inl">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/RectangleShape.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/RenderStates.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/RenderTarget.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/RenderTexture.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/RenderWindow.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/Shader.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/Shape.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/Sprite.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/Text.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/Texture.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/Transform.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/Transformable.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/Vertex.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/VertexArray.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Graphics/View.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../include/SFML/Network/Export.hpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../include/SFML/Network/Ftp.hpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../include/SFML/Network/Http.hpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../include/SFML/Network/IpAddress.hpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../include/SFML/Network/Packet.hpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../include/SFML/Network/Socket.hpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../include/SFML/Network/SocketHandle.hpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../include/SFML/Network/SocketSelector.hpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../include/SFML/Network/TcpListener.hpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../include/SFML/Network/TcpSocket.hpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../include/SFML/Network/UdpSocket.hpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../include/SFML/System/Clock.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/Err.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/Export.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/FileInputStream.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/InputStream.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/Lock.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/MemoryInputStream.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/Mutex.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/NonCopyable.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/Sleep.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/String.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/String.inl">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/Thread.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/Thread.inl">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/ThreadLocal.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/ThreadLocalPtr.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/ThreadLocalPtr.inl">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/Time.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/Utf.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/Utf.inl">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/Vector2.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/Vector2.inl">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/Vector3.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/System/Vector3.inl">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../include/SFML/Window/Context.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../include/SFML/Window/ContextSettings.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../include/SFML/Window/Event.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../include/SFML/Window/Export.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../include/SFML/Window/GlResource.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../include/SFML/Window/Joystick.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../include/SFML/Window/Keyboard.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../include/SFML/Window/Mouse.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../include/SFML/Window/Sensor.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../include/SFML/Window/Touch.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../include/SFML/Window/VideoMode.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../include/SFML/Window/Window.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../include/SFML/Window/WindowHandle.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../include/SFML/Window/WindowStyle.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/ALCheck.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/ALCheck.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/AlResource.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/AudioDevice.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/AudioDevice.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/CMakeLists.txt" />
+		<Unit filename="../src/SFML/Audio/InputSoundFile.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/Listener.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/Music.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/OutputSoundFile.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/Sound.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundBuffer.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundBufferRecorder.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundFileFactory.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundFileReaderFlac.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundFileReaderFlac.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundFileReaderOgg.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundFileReaderOgg.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundFileReaderWav.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundFileReaderWav.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundFileWriterFlac.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundFileWriterFlac.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundFileWriterOgg.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundFileWriterOgg.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundFileWriterWav.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundFileWriterWav.hpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundRecorder.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundSource.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/Audio/SoundStream.cpp">
+			<Option target="sfml-audio" />
+		</Unit>
+		<Unit filename="../src/SFML/CMakeLists.txt" />
+		<Unit filename="../src/SFML/Graphics/BlendMode.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/CMakeLists.txt" />
+		<Unit filename="../src/SFML/Graphics/CircleShape.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/Color.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/ConvexShape.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/Font.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/GLCheck.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/GLCheck.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/GLExtensions.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/GLExtensions.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/GLLoader.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/GLLoader.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/Image.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/ImageLoader.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/ImageLoader.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/RectangleShape.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/RenderStates.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/RenderTarget.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/RenderTexture.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/RenderTextureImpl.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/RenderTextureImpl.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/RenderTextureImplDefault.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/RenderTextureImplDefault.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/RenderTextureImplFBO.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/RenderTextureImplFBO.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/RenderWindow.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/Shader.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/Shape.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/Sprite.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/Text.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/Texture.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/TextureSaver.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/TextureSaver.hpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/Transform.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/Transformable.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/Vertex.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/VertexArray.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Graphics/View.cpp">
+			<Option target="sfml-graphics" />
+		</Unit>
+		<Unit filename="../src/SFML/Main/CMakeLists.txt" />
+		<Unit filename="../src/SFML/Main/MainWin32.cpp">
+			<Option target="sfml-main" />
+		</Unit>
+		<Unit filename="../src/SFML/Network/CMakeLists.txt" />
+		<Unit filename="../src/SFML/Network/Ftp.cpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../src/SFML/Network/Http.cpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../src/SFML/Network/IpAddress.cpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../src/SFML/Network/Packet.cpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../src/SFML/Network/Socket.cpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../src/SFML/Network/SocketImpl.hpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../src/SFML/Network/SocketSelector.cpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../src/SFML/Network/TcpListener.cpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../src/SFML/Network/TcpSocket.cpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../src/SFML/Network/UdpSocket.cpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../src/SFML/Network/Win32/SocketImpl.cpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../src/SFML/Network/Win32/SocketImpl.hpp">
+			<Option target="sfml-network" />
+		</Unit>
+		<Unit filename="../src/SFML/System/CMakeLists.txt" />
+		<Unit filename="../src/SFML/System/Clock.cpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/Err.cpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/FileInputStream.cpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/Lock.cpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/MemoryInputStream.cpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/Mutex.cpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/Sleep.cpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/String.cpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/Thread.cpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/ThreadLocal.cpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/Time.cpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/Win32/ClockImpl.cpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/Win32/ClockImpl.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/Win32/MutexImpl.cpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/Win32/MutexImpl.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/Win32/SleepImpl.cpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/Win32/SleepImpl.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/Win32/ThreadImpl.cpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/Win32/ThreadImpl.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/Win32/ThreadLocalImpl.cpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/System/Win32/ThreadLocalImpl.hpp">
+			<Option target="sfml-system" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/CMakeLists.txt" />
+		<Unit filename="../src/SFML/Window/Context.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/GlContext.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/GlContext.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/GlResource.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/InputImpl.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Joystick.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/JoystickImpl.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/JoystickManager.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/JoystickManager.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Keyboard.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Mouse.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Sensor.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/SensorImpl.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/SensorManager.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/SensorManager.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Touch.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/VideoMode.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/VideoModeImpl.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Win32/InputImpl.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Win32/InputImpl.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Win32/JoystickImpl.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Win32/JoystickImpl.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Win32/SensorImpl.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Win32/SensorImpl.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Win32/VideoModeImpl.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Win32/WglContext.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Win32/WglContext.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Win32/WglExtensions.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Win32/WglExtensions.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Win32/WindowImplWin32.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Win32/WindowImplWin32.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/Window.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/WindowImpl.cpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Unit filename="../src/SFML/Window/WindowImpl.hpp">
+			<Option target="sfml-window" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
