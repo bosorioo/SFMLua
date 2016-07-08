@@ -10,7 +10,7 @@ local enemy_speed = 5.2
 local shot_radius = 3
 local shot_speed = 5
 local shots = {}
-local lifes = 3
+local lives = 3
 local time_started = 0
 local killed = 0
 local started = false
@@ -66,7 +66,7 @@ end
 
 function Begin()
 	time_started = os.clock()
-	lifes = 3
+	lives = 3
 	newEnemy(true, getTime() + 1.2)
 	newEnemy(false, getTime() + 1.2)
 	started = true
@@ -97,8 +97,8 @@ end
 	  
 
 function TakeLife()
-	lifes = lifes - 1
-	if lifes < 0 then
+	lives = lives - 1
+	if lives < 0 then
 		started = false
 		Highscore()
 		Reset()
@@ -206,7 +206,7 @@ while window:isOpen() do
 	end
 	
 	if started then
-		Graphics.print("Lifes: ".. lifes, 40, 8, font)
+		Graphics.print("Lives: ".. lives, 40, 8, font)
 		Graphics.print("Time Survived: ".. precision(os.clock() - time_started, 1), 170, 8, font)
 		Graphics.print("Killed: "..killed, 145, 90, font)
 	else
