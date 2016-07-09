@@ -30,6 +30,9 @@
 # Codeblock Folder
 codeblocks/
 
+# Log file
+sfml log.txt
+
 # =========================
 # Operating System Files
 # =========================
