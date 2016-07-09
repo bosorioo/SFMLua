@@ -1,7 +1,0 @@
-Lua script entry file: C:\Users\Bruno\Desktop\Bruno\Projetos\bosorioo github\SFMLua\examples\simple window with icon\main.lua
-
-Arguments:
-	C:\Users\Bruno\Desktop\Bruno\Projetos\bosorioo github\SFMLua\bin win32\SFMLua.exe
-	C:\Users\Bruno\Desktop\Bruno\Projetos\bosorioo github\SFMLua\examples\simple window with icon\main.lua
-
-Program finished.
