@@ -1,21 +1,37 @@
-package.path = WorkDir .. "?.lua;" .. WorkDir .. "?/main.lua;" .. 
-	WorkDir .. "libs/?.lua;" .. WorkDir .. "libs/?/main.lua;"
-package.cpath = WorkDir .. "?.dll;" .. WorkDir .. "libs/dlls/?.dll;"
+lua_path = {
+	WorkDir .. "?.lua",
+	WorkDir .. "?/main.lua",
+	WorkDir .. "libs/?.lua",
+	WorkDir .. "libs/?/main.lua"
+}
+
+dll_path = {
+	WorkDir .. "?.dll",
+	WorkDir .. "libs/dlls/?.dll"
+}
 
 if WorkDir ~= ExecDir then
-	package.path = package.path .. ExecDir .. "?.lua;" .. ExecDir .. "?/main.lua;" .. 
-		ExecDir .. "libs/?.lua;" .. ExecDir .. "libs/?/main.lua;"
-	package.cpath = package.cpath .. ExecDir .. "?.dll;" .. ExecDir .. "libs/dlls/?.dll;"
+	for index = 1, #lua_path do
+		lpath = lua_path[index]
+		lua_path[#lua_path + 1] = ExecDir .. string.sub(lpath, #WorkDir + 1)
+	end
+	for index = 1, #dll_path do
+		cpath = dll_path[index]
+		dll_path[#dll_path + 1] = ExecDir .. string.sub(cpath, #WorkDir + 1)
+	end
 end
 
+package.path = table.concat(lua_path, ';')
+package.cpath = table.concat(dll_path, ';')
+
 function printn(...)
-    print()
-    print(...)
-    local t = {...}
-    if type(t[#t]) == 'string' then
-        print '\n'
-    end
-    io.flush()
+	print()
+	print(...)
+	local t = {...}
+	if type(t[#t]) == 'string' then
+		print '\n'
+	end
+	io.flush()
 end
 
 function printf(str, ...)
