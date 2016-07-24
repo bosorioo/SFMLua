@@ -14,6 +14,7 @@ namespace LuaScript
     void setExitPause(bool enabled);
     void setErrorPause(bool enabled);
     void hideConsole();
+    void showConsole();
 
     extern std::string fontFile;
     extern std::string logFile;
@@ -26,6 +27,7 @@ namespace LuaScript
     int LuaFunction_enableConsole(lua_State* L);
     int LuaFunction_disableConsole(lua_State* L);
     int LuaFunction_hideConsole(lua_State* L);
+    int LuaFunction_showConsole(lua_State* L);
     int LuaFunction_getConsoleInput(lua_State* L);
     int LuaFunction_internal_open(lua_State* L);
     int LuaFunction_setExitPause(lua_State* L);

@@ -142,12 +142,18 @@ bool LuaScript::setConsole(bool enabled, std::string consoleTitle)
     }
     else if (!enabled && consoleEnabled)
     {
-        LuaScript::consoleEnabled = enabled;
-        return FreeConsole();
-    }
-    #endif
+        HWND consoleWindow = GetConsoleWindow();
 
-    LuaScript::consoleEnabled = enabled;
+        bool freed = FreeConsole() != 0;
+
+        if (!freed)
+            std::cerr << "Console free failed (" << GetLastError() << ").\n";
+
+        bool destroyed = ShowWindow(consoleWindow, SW_HIDE);
+
+        if (!destroyed)
+            std::cerr << "Console destroy failed (" << GetLastError() << ").\n";
+    }
 
     if (enabled)
     {
@@ -163,6 +169,10 @@ bool LuaScript::setConsole(bool enabled, std::string consoleTitle)
         signal(SIGTERM,  SIG_DFL);
         signal(SIGABRT,  SIG_DFL);
     }
+
+    #endif
+
+    LuaScript::consoleEnabled = enabled;
 
     return true;
 }
@@ -183,6 +193,16 @@ void LuaScript::hideConsole()
 
     HWND console = GetConsoleWindow();
     ShowWindow(console, SW_HIDE);
+
+    #endif // _WIN32
+}
+
+void LuaScript::showConsole()
+{
+    #ifdef _WIN32
+
+    HWND console = GetConsoleWindow();
+    ShowWindow(console, SW_SHOW);
 
     #endif // _WIN32
 }
@@ -317,8 +337,8 @@ int LuaScript::sfml_close(lua_State* L, bool error)
 {
     Window::CloseAll();
 
-    if (!LuaScript::consoleEnabled && (LuaScript::exitPauseEnabled || (error && LuaScript::errorPauseEnabled)))
-        LuaScript::setConsole(true, "");
+    if (LuaScript::consoleEnabled && (LuaScript::exitPauseEnabled || (error && LuaScript::errorPauseEnabled)))
+        LuaScript::showConsole();
 
     if (SFMLuaThread::isAnyRunning())
     {
@@ -402,6 +422,12 @@ int LuaScript::LuaFunction_disableConsole(lua_State* L)
 int LuaScript::LuaFunction_hideConsole(lua_State* L)
 {
     LuaScript::hideConsole();
+    return 0;
+}
+
+int LuaScript::LuaFunction_showConsole(lua_State* L)
+{
+    LuaScript::showConsole();
     return 0;
 }
 
@@ -508,7 +534,15 @@ int LuaScript::LuaFunction_improvedPrint(lua_State* L)
         {
             case LUA_TSTRING: {std::cout << lua_tostring(L, i); break;}
             case LUA_TBOOLEAN: {std::cout << (lua_toboolean(L, i) ? "true" : "false"); break;}
-            case LUA_TNUMBER: {std::cout << lua_tonumber(L, i); break;}
+            case LUA_TNUMBER: {
+                lua_Number n = lua_tonumber(L, i);
+
+                if (lua_isinteger(L, i) || (lua_Integer)n == n)
+                    std::cout << lua_tointeger(L, i);
+                else
+                    std::cout << n;
+                break;
+            }
             case LUA_TNIL: {std::cout << "nil"; break;}
             case LUA_TUSERDATA:
             {
@@ -664,6 +698,8 @@ void LuaScript::loadBasicFunctions(lua_State* L)
     LuaAux::newGlobal(L, "Console", "close", LuaFunction_disableConsole);
     // Console.hide()
     LuaAux::newGlobal(L, "Console", "hide", LuaFunction_hideConsole);
+    // Console.show()
+    LuaAux::newGlobal(L, "Console", "show", LuaFunction_showConsole);
     // string = Console.getInput(; number: maxLength)
     LuaAux::newGlobal(L, "Console", "getInput", LuaFunction_getConsoleInput);
     // Console.setPauseOnExit(; boolean: enabled)
