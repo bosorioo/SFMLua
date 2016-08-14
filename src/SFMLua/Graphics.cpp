@@ -355,8 +355,8 @@ int Graphics::Line(lua_State* L)
 
     while (lua_gettop(L) >= 4)
     {
-        verts[0].position = sf::Vector2f(lua_tointeger(L, 1), lua_tointeger(L, 2));
-        verts[1].position = sf::Vector2f(lua_tointeger(L, 3), lua_tointeger(L, 4));
+        verts[0].position = sf::Vector2f(lua_tonumber(L, 1), lua_tonumber(L, 2));
+        verts[1].position = sf::Vector2f(lua_tonumber(L, 3), lua_tonumber(L, 4));
         LuaAux::popBottom(L, 4);
         g_Target->draw(verts, 2, sf::Lines, g_Shader);
     }
