@@ -149,25 +149,10 @@ bool LuaScript::setConsole(bool enabled, std::string consoleTitle)
         if (!freed)
             std::cerr << "Console free failed (" << GetLastError() << ").\n";
 
-        bool destroyed = ShowWindow(consoleWindow, SW_HIDE);
+        bool hidden = ShowWindow(consoleWindow, SW_HIDE);
 
-        if (!destroyed)
-            std::cerr << "Console destroy failed (" << GetLastError() << ").\n";
-    }
-
-    if (enabled)
-    {
-        signal(SIGBREAK, signal_handler);
-        signal(SIGSEGV,  signal_handler);
-        signal(SIGTERM,  signal_handler);
-        signal(SIGABRT,  signal_handler);
-    }
-    else
-    {
-        signal(SIGBREAK, SIG_DFL);
-        signal(SIGSEGV,  SIG_DFL);
-        signal(SIGTERM,  SIG_DFL);
-        signal(SIGABRT,  SIG_DFL);
+        if (!hidden)
+            std::cerr << "Console hiding failed (" << GetLastError() << ").\n";
     }
 
     #endif
