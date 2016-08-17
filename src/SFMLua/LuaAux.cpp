@@ -89,10 +89,10 @@ sf::Color LuaAux::getColor(lua_State* L, int index, bool isOneArg)
         else
         {
             arg = lua_tonumber(L, index);
-            color.r = (sf::Uint8)((arg & 0xFF0000) >> 16);
-            color.g = (sf::Uint8)((arg & 0xFF00) >> 8);
-            color.b = (sf::Uint8)((arg & 0xFF));
             color.a = (sf::Uint8)((arg & 0xFF000000) >> 24);
+            color.r = (sf::Uint8)((arg & 0x00FF0000) >> 16);
+            color.g = (sf::Uint8)((arg & 0x0000FF00) >> 8);
+            color.b = (sf::Uint8)((arg & 0x000000FF));
         }
     }
 
@@ -196,40 +196,47 @@ std::vector<std::string> LuaAux::splitLuaErrorPath(std::string error)
 void LuaAux::newClass(lua_State* L, const luaL_Reg* methods, const luaL_Reg* metamethods,
                       std::string className, lua_CFunction callfunction, bool setGlobal)
 {
-    lua_newtable(L);
+    // This will create a table containing all functions provided with parameter 'methods'.
+    // A metatable associated with 'className' will be created with all functions provided with 'metamethods'
+    // Whenever an instance of the class 'className' is created, that instance will have this metatable set for it.
+    // The call function, if provided, is inserted in a new table that will be the metatable for the first table created.
+    // The call function allows the syntax 'local instance = className(...)', instead of 'local instance = className.create(...)'.
+
+
+    lua_newtable(L); // table = {}
 
     if (methods)
     {
         for (int i = 0; methods[i].name; i++)
         {
             lua_pushcfunction(L, methods[i].func);
-            lua_setfield(L, -2, methods[i].name);
+            lua_setfield(L, -2, methods[i].name); // table[methodName] = method
         }
     }
 
-    luaL_newmetatable(L, className.c_str());
+    luaL_newmetatable(L, className.c_str()); // metatable = {}, associated with className
 
     if (metamethods)
         for (int i = 0; metamethods[i].name; i++)
         {
             lua_pushcfunction(L, metamethods[i].func);
-            lua_setfield(L, -2, metamethods[i].name);
+            lua_setfield(L, -2, metamethods[i].name); // metatable[methodName] = method
         }
 
     lua_pushvalue(L, -2);
-    lua_setfield(L, -2, "__index");
+    lua_setfield(L, -2, "__index"); // metatable.__index = table
 
     //lua_pushvalue(L, -2);
     //lua_setfield(L, -2, "__metatable");
 
-    lua_pop(L, 1);
+    lua_pop(L, 1); // remove metatable from stack
 
     if (callfunction)
     {
-        lua_newtable(L);
+        lua_newtable(L); // call_table = {}
         lua_pushcfunction(L, callfunction);
-        lua_setfield(L, -2, "__call");
-        lua_setmetatable(L, -2);
+        lua_setfield(L, -2, "__call"); // call_table.__call = callfunction
+        lua_setmetatable(L, -2); // setmetatable(table, call_table)
     }
 
     if (setGlobal)
@@ -309,7 +316,7 @@ void LuaAux::newGlobal(lua_State* L, std::string tableName, std::string globalNa
         lua_newtable(L);
     }
 
-    lua_pushnumber(L, var);
+    lua_pushinteger(L, var);
     lua_setfield(L, -2, globalName.c_str());
     lua_setglobal(L, tableName.c_str());
 }
