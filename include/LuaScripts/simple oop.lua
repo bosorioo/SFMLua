@@ -1,29 +1,38 @@
 local sub = string.sub
 local unpack = table.unpack
 local rawget = rawget
+local setmetatable = setmetatable
+
 local function class__call(class, ...)
 	return class.new(...)
 end
+
 local function extends(derived, baseName)
 	derived._internal_baseClass = _G[baseName]
 end
+
 local propagationMeta = {}
+
 propagationMeta.__index = function(propagationTable, index)
-	local thisClass = propagationTable[1]
-	local instance = propagationTable[2]
-	if index == 'super' then
-		local ret = rawget(instance, index) or thisClass[index]
-		if ret then return ret end
-		propagationTable[1] = thisClass._internal_baseClass
-		return propagationTable
+	local thisClass = rawget(propagationTable, 1)
+	local instance = rawget(propagationTable, 2)
+	
+	local ret = rawget(instance, index) or (thisClass and thisClass[index])
+	if ret then return ret end
+	
+	if index == 'super' and thisClass and thisClass._internal_baseClass then
+		return setmetatable({thisClass._internal_baseClass, instance}, propagationMeta)
 	end
-	return rawget(instance, index) or thisClass[index] or instance[index]
 end
+
 propagationMeta.__call = function(propagationTable, ...)
-	return propagationTable[1].constructor(propagationTable[2], ...)
+	local thisClass = rawget(propagationTable, 1)
+	local ctor = thisClass and rawget(thisClass, 'constructor')
+	return ctor and ctor(propagationTable, ...)
 end
+
 propagationMeta.__newindex = function(propagationTable, index, value)
-	propagationTable[2][index] = value
+	rawget(propagationTable, 2)[index] = value
 end
 
 function Class (className)
