@@ -10,6 +10,16 @@ int LuaAux::dumpFunction(lua_State *L, const void* p, size_t sz, void* d)
     return 0;
 }
 
+int LuaAux::standardUserData__eq(lua_State* L)
+{
+    if (!lua_isuserdata(L, 1) || !lua_isuserdata(L, 2))
+        lua_pushboolean(L, false);
+    else
+        lua_pushboolean(L, static_cast<LuaUserData*>(lua_touserdata(L, 1))->block == static_cast<LuaUserData*>(lua_touserdata(L, 2))->block);
+
+    return 1;
+}
+
 int LuaAux::getCurrentLine(lua_State* L)
 {
     lua_Debug ar;

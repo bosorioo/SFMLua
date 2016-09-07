@@ -37,6 +37,7 @@ namespace LuaUdpSocket
 
     static const luaL_Reg Meta[] = {
         {"__gc",          Destroy},
+        {"__eq", LuaAux::standardUserData__eq},
     {0, 0}};
 }
 
@@ -72,6 +73,7 @@ namespace LuaTcpSocket
 
     static const luaL_Reg Meta[] = {
         {"__gc",          Destroy},
+        {"__eq", LuaAux::standardUserData__eq},
     {0, 0}};
 }
 
@@ -99,6 +101,7 @@ namespace LuaTcpListener
 
     static const luaL_Reg Meta[] = {
         {"__gc",          Destroy},
+        {"__eq", LuaAux::standardUserData__eq},
     {0, 0}};
 }
 
@@ -124,6 +127,7 @@ namespace LuaSocketSelector
 
     static const luaL_Reg Meta[] = {
         {"__gc",          Destroy},
+        {"__eq", LuaAux::standardUserData__eq},
     {0, 0}};
 }
 #endif // SOCKET_H

@@ -586,6 +586,7 @@ static const luaL_Reg Methods [] = {
 
 static const luaL_Reg Meta[] = {
     {"__gc",    LuaThread_Kill},
+    {"__eq", LuaAux::standardUserData__eq},
 {0, 0}};
 
 void SFMLuaThread::Register(lua_State* L)

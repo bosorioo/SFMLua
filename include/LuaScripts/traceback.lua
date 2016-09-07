@@ -32,6 +32,7 @@ function onTrace(trace, lasterr)
 	local rep = function(n)
 		return string.rep(' ', n)
 	end
+
 	Console.setNotification(true, true)
 
 	for msg in trace:gmatch('[^\n]+') do

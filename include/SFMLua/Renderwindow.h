@@ -3,6 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include "Lua/lua.hpp"
+#include "SFMLua/LuaAux.h"
 
 namespace Window
 {
@@ -91,6 +92,7 @@ namespace Window
 
     static const luaL_Reg Meta[] = {
         {"__gc",            Destroy},
+        {"__eq", LuaAux::standardUserData__eq},
     {0, 0}};
 }
 

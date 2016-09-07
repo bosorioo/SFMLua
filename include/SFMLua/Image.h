@@ -49,6 +49,7 @@ namespace Image
      static const luaL_Reg Meta[] = {
         {"__gc",          Destroy},
         {"__call",        PixelIndexing},
+        {"__eq", LuaAux::standardUserData__eq},
     {0, 0}};
 }
 

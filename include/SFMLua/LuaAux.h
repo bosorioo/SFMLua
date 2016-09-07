@@ -10,6 +10,7 @@
 namespace LuaAux
 {
     int dumpFunction(lua_State* L, const void* p, size_t sz, void* d);
+    int standardUserData__eq(lua_State* L);
 
     int getCurrentLine(lua_State* L);
 
