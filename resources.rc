@@ -1,2 +1,20 @@
 A ICON MOVEABLE PURE LOADONCALL DISCARDABLE "icon.ico"
+
 #define wxUSE_NO_MANIFEST 0
+
+1 VERSIONINFO
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "SFMLua Project"
+            VALUE "FileDescription", "Lua wrapper for SFML"
+            VALUE "FileVersion", "1.0"
+            VALUE "InternalName", "SFMLua"
+            VALUE "OriginalFilename", "SFMLua"
+            VALUE "ProductName", "SFMLua"
+            VALUE "ProductVersion", "1.0"
+        END
+    END
+END
