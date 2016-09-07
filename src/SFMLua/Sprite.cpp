@@ -322,6 +322,9 @@ int Sprite::GetTexture(lua_State* L)
 
     const sf::Texture* tex = spr->getTexture();
 
+    if (tex == nullptr)
+        return 0;
+
     LuaUserData lud;
     lud.aliases = static_cast<int16_t*>(LuaUserData::from_userdata_block(const_cast<sf::Texture*>(tex)));
     lud.metaname = TEXTURE_TABLE;
