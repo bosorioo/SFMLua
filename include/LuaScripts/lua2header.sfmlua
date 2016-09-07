@@ -3,34 +3,39 @@ Console.setPauseOnExit()
 
 local continue = true
 local function writeHeader(data, outputPath)
+
 	local out = io.open(WorkDir .. outputPath, 'w')
+	
 	if not out then
 		out = io.open(outputPath, 'w')
 		if not out then
 			return printn("Couldn't create output file.")
 		end
 	end
+	
 	local str = {}
-	local nowhitespacedata = data:gsub('%s+', ' ')
+	local nowhitespacedata = data--data:gsub('%s+', '\n')
 	local hexPerLine = 12
 	local comma = false
+	
 	for i = 1, #nowhitespacedata do
-		if i % hexPerLine == 1 then
-			str[#str + 1] = '\t'
-		end
-		if comma then
-			str[#str + 1] = ', '
-		end
+	
+		if i % hexPerLine == 1 then str[#str + 1] = '\t' end
+		if comma then str[#str + 1] = ', ' end
+		
 		str[#str + 1] = string.format('0x%.2X', string.byte(string.sub(nowhitespacedata, i, i)))
 		comma = true
+		
 		if i % hexPerLine == 0 then
 			str[#str + 1] = ',\n'
 			comma = false
 		end
 	end
+	
 	local stars = string.rep('*', 12)
 	local file = outputPath:match(".+[\\/](.+)$") or outputPath
 	local line = 0
+	
 	file = file:upper():gsub('[%. ]', '_')
 	out:write(string.format([[/%s
 * Generated with lua2header.lua
