@@ -7,6 +7,11 @@ LuaData::LuaData() : m_type(LUA_TNIL)
 
 }
 
+LuaData::LuaData(lua_State* L, int index)
+{
+    set(L, index);
+}
+
 LuaData::~LuaData()
 {
     clear();
@@ -16,8 +21,9 @@ void LuaData::set(lua_State* L, int index)
 {
     clear();
     index = lua_absindex(L, index);
+    m_type = lua_type(L, index);
 
-    switch (lua_type(L, index))
+    switch (m_type)
     {
         case LUA_TNIL:
         case LUA_TNONE:
@@ -26,7 +32,6 @@ void LuaData::set(lua_State* L, int index)
 
         case LUA_TTABLE:
         {
-            m_type = LUA_TTABLE;
             m_tab = new std::map<LuaData*, LuaData*>;
 
             lua_pushnil(L);
@@ -51,28 +56,24 @@ void LuaData::set(lua_State* L, int index)
 
         case LUA_TSTRING:
         {
-            m_type = LUA_TSTRING;
             m_str = new std::string(lua_tostring(L, index), lua_rawlen(L, index));
             break;
         }
 
         case LUA_TNUMBER:
         {
-            m_type = LUA_TNUMBER;
             m_num = lua_tonumber(L, index);
             break;
         }
 
         case LUA_TBOOLEAN:
         {
-            m_type = LUA_TBOOLEAN;
             m_num = lua_toboolean(L, index);
             break;
         }
 
         case LUA_TFUNCTION:
         {
-            m_type = LUA_TFUNCTION;
             m_str = new std::string;
 
             lua_pushvalue(L, index);
@@ -86,7 +87,6 @@ void LuaData::set(lua_State* L, int index)
 
         case LUA_TUSERDATA:
         {
-            m_type = LUA_TUSERDATA;
             m_ptr = lua_touserdata(L, index);
 
             LuaUserData* userdata = static_cast<LuaUserData*>(m_ptr);
@@ -99,7 +99,6 @@ void LuaData::set(lua_State* L, int index)
 
         case LUA_TLIGHTUSERDATA:
         {
-            m_type = LUA_TLIGHTUSERDATA;
             m_ptr = lua_touserdata(L, index);
             break;
         }
@@ -109,7 +108,7 @@ void LuaData::set(lua_State* L, int index)
     }
 }
 
-void LuaData::get(lua_State* L)
+void LuaData::get(lua_State* L) const
 {
     std::map<LuaData*, LuaData*>::iterator it, it_end;
     int index;
@@ -224,7 +223,7 @@ void LuaData::clear()
             else if (userdata->metaname == IMAGE_TABLE)
                 userdata->gc<sf::Image>();
             else if (userdata->metaname == GIF_TABLE)
-                userdata->gc<LuaGif::GifImage>();
+                userdata->gc<Gif::GifImage>();
             else if (userdata->metaname == TCPSOCKET_TABLE)
                 userdata->gc<sf::TcpSocket>();
             else if (userdata->metaname == TCPLISTENER_TABLE)

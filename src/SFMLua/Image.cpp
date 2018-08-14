@@ -1,6 +1,8 @@
 #include "SFMLua/LuaAux.h"
 #include "SFMLua/Classes.h"
+#include "BLAKE/blake2.h"
 #include <fstream>
+#include <cstring>
 #include <sys/stat.h>
 
 void Image::Register(lua_State* L)
@@ -290,19 +292,31 @@ int Image::GetPixelString(lua_State* L)
 
     sf::Vector2u v = image->getSize();
     unsigned int pixels_count = v.x * v.y * 4;
-    sf::Uint8* ptr = const_cast<sf::Uint8*>(image->getPixelsPtr());
-    sf::Uint8* end = ptr + pixels_count;
-    char* result = new char[pixels_count];
-    while (ptr < end)
+    const sf::Uint8* ptr = image->getPixelsPtr();
+
+    if (lua_isstring(L, 2))
     {
-        if (!(*ptr))
-            *result++ = (char)1;
-        else
-            *result++ = (char)(*ptr);
-        ptr++;
+        const char* hashStr = lua_tostring(L, 2);
+
+        if (strcmp(hashStr, "blake2") == 0)
+        {
+            char output[64];
+            blake2(output, sizeof(output), ptr, pixels_count, nullptr, 0);
+            lua_pushlstring(L, output, sizeof(output));
+            return 1;
+        }
     }
-    lua_pushstring(L, result - pixels_count);
-    delete [] result;
+
+    const sf::Uint8* end = ptr + pixels_count;
+    sf::Uint8* base = new sf::Uint8[pixels_count];
+    sf::Uint8* newStr = base;
+
+    while (ptr < end)
+        *newStr++ = (*ptr++);
+
+    lua_pushlstring(L, reinterpret_cast<char*>(base), pixels_count);
+
+    delete [] base;
     return 1;
 }
 

@@ -51,7 +51,7 @@ int Text::SetColor(lua_State* L)
     if (!txt)
         return 0;
 
-    txt->setColor(LuaAux::getColor(L, 2, lua_gettop(L) == 2));
+    txt->setFillColor(LuaAux::getColor(L, 2, lua_gettop(L) == 2));
     return 0;
 }
 
@@ -62,7 +62,7 @@ int Text::GetColor(lua_State* L)
     if (!txt)
         return 0;
 
-    sf::Color color = txt->getColor();
+    sf::Color color = txt->getFillColor();
     lua_pushinteger(L, color.r);
     lua_pushinteger(L, color.g);
     lua_pushinteger(L, color.b);

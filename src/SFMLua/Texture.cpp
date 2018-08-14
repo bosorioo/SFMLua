@@ -158,8 +158,9 @@ int Texture::LoadWindow(lua_State* L)
     if (!tex || !window)
         return 0;
 
-    sf::Image image = window->capture();
-    lua_pushboolean(L, tex->loadFromImage(image));
+    tex->create(window->getSize().x, window->getSize().y);
+    tex->update(*window);
+    lua_pushboolean(L, true);
     return 1;
 }
 

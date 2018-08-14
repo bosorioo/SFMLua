@@ -147,7 +147,11 @@ int Window::Capture(lua_State* L)
     if (!image)
         return 0;
 
-    image->create(window->getSize().x, window->getSize().y, window->capture().getPixelsPtr());
+    sf::Vector2u windowSize = window->getSize();
+    sf::Texture texture;
+    texture.create(windowSize.x, windowSize.y);
+    texture.update(*window);
+    image->create(windowSize.x, windowSize.y, texture.copyToImage().getPixelsPtr());
     return 1;
 }
 

@@ -70,7 +70,7 @@ int Graphics::Print(lua_State* L)
         return 0;
 
     sf::Text txt("", g_Font, 12);
-    txt.setColor(g_drawingColor);
+    txt.setFillColor(g_drawingColor);
 
     if (lua_isstring(L, 1))
         txt.setString(lua_tostring(L, 1));
@@ -82,7 +82,7 @@ int Graphics::Print(lua_State* L)
     {
         lua_getfield(L, 4, "color"); lua_pop(L, 1);
         if (lua_istable(L, 0))
-            txt.setColor(LuaAux::getColorFromTable(L, 0));
+            txt.setFillColor(LuaAux::getColorFromTable(L, 0));
 
         lua_getfield(L, 4, "style"); lua_pop(L, 1);
         if (lua_isnumber(L, 0))

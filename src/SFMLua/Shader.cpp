@@ -61,13 +61,13 @@ int Shader::SetParameter(lua_State* L)
         return 0;
 
     if (lua_gettop(L) == 3)
-        s->setParameter(lua_tostring(L, 2), lua_tonumber(L, 3));
+        s->setUniform(lua_tostring(L, 2), static_cast<float>(lua_tonumber(L, 3)));
     else if (lua_gettop(L) == 4)
-        s->setParameter(lua_tostring(L, 2), lua_tonumber(L, 3), lua_tonumber(L, 4));
+        s->setUniform(lua_tostring(L, 2), sf::Vector2f(lua_tonumber(L, 3), lua_tonumber(L, 4)));
     else if (lua_gettop(L) == 5)
-        s->setParameter(lua_tostring(L, 2), lua_tonumber(L, 3), lua_tonumber(L, 4), lua_tonumber(L, 5));
+        s->setUniform(lua_tostring(L, 2), sf::Vector3f(lua_tonumber(L, 3), lua_tonumber(L, 4), lua_tonumber(L, 5)));
     else if (lua_gettop(L) == 6)
-        s->setParameter(lua_tostring(L, 2), lua_tonumber(L, 3), lua_tonumber(L, 4), lua_tonumber(L, 5), lua_tonumber(L, 6));
+        s->setUniform(lua_tostring(L, 2), sf::Glsl::Vec4(lua_tonumber(L, 3), lua_tonumber(L, 4), lua_tonumber(L, 5), lua_tonumber(L, 6)));
     return 0;
 }
 

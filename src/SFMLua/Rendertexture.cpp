@@ -17,22 +17,44 @@ int RenderTexture::Call(lua_State* L)
 int RenderTexture::Create(lua_State* L)
 {
     unsigned int height = 0, width = 0;
-    bool depthBuffer = false;
 
-    if (lua_isboolean(L, 3))
-        depthBuffer = lua_toboolean(L, 3);
+    unsigned int depthBits = 8;
+    unsigned int stencilBits = 8;
+    unsigned int antialiasLevel = 8;
 
-    if (lua_isnumber(L, 1) && lua_isnumber(L, 2))
+    if (lua_type(L, 3) == LUA_TTABLE)
+    {
+        #define getField(name, var) \
+            lua_getfield(L, 3, #name); \
+            if (lua_type(L, -1) == LUA_TNUMBER) \
+            { \
+                var = lua_tonumber(L, -1); \
+            } \
+            lua_pop(L, 1);
+
+        getField(depth, depthBits)
+        getField(stencil, stencilBits)
+        getField(antialias, antialiasLevel)
+
+        #undef getField
+    }
+
+    if (lua_isnumber(L, 1))
+    {
+        width = lua_tonumber(L, 1);
+        height = width;
+    }
+
+    if (lua_isnumber(L, 2))
     {
         height = lua_tonumber(L, 2);
-        width = lua_tonumber(L, 1);
     }
 
     sf::RenderTexture* canvas = LuaAux::newUserData<sf::RenderTexture>(L, true, RENDERTEXTURE_TABLE);
 
     if (canvas)
     {
-        canvas->create(width, height, depthBuffer);
+        canvas->create(width, height, sf::ContextSettings(depthBits, stencilBits, antialiasLevel));
     }
 
     return 1;

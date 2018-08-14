@@ -8,8 +8,8 @@ extern "C" {
     #include "LuaGL/LuaGL.h"
 }
 
-#include "LuaScripts/sfmlua.lua.h"
-#include "LuaScripts/simple oop.lua.h"
+#include "internal-lua/sfmlua.lua.h"
+#include "internal-lua/oop.lua.h"
 
 #include <condition_variable>
 #include <mutex>
@@ -178,17 +178,19 @@ int LuaThread_Create(lua_State* L)
             lua_pop(lt->L, 1);
         }
 
-        if (luaL_loadbuffer(lt->L, lua_script_simple_oop, sizeof(lua_script_simple_oop), "simple oop (internal script)") ||
+        if (luaL_loadbuffer(lt->L, lua_script_oop, sizeof(lua_script_oop), "oop (internal script)") ||
             lua_pcall(lt->L, 0, LUA_MULTRET, 0))
         {
-            lt->addError("internal lua script simple oop.lua initialization failed:");
+            lt->addError("internal lua source 'oop.lua' initialization failed:");
             lt->addError(lua_tostring(lt->L, -1));
             lua_pop(lt->L, 1);
         }
 
     }
     else
+    {
         SFMLuaThread::Register(lt->L);
+    }
 
     if (lua_type(L, 1) == LUA_TSTRING)
     {
@@ -555,7 +557,7 @@ int32_t LuaThread_LoadLibrary(lua_State* L)
         Network::Register(L);
 
     if (flags & SFMLuaLibraries_GIF)
-        LuaGif::Register(L);
+        Gif::Register(L);
 
     if (flags & SFMLuaLibraries_Basic)
         LuaScript::loadBasicFunctions(L);

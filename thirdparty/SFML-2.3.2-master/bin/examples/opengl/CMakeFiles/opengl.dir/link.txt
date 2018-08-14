@@ -1,3 +1,0 @@
-"C:\Program Files (x86)\CodeBlocks\Cmake 3.4\bin\cmake.exe" -E remove -f CMakeFiles\opengl.dir/objects.a
-C:\PROGRA~2\CODEBL~1\MinGW\bin\ar.exe cr CMakeFiles\opengl.dir/objects.a @CMakeFiles\opengl.dir\objects1.rsp
-C:\PROGRA~2\CODEBL~1\MinGW\bin\G__~1.EXE  -O3 -DNDEBUG  -mwindows -Wl,--whole-archive CMakeFiles\opengl.dir/objects.a -Wl,--no-whole-archive  -o opengl.exe -Wl,--out-implib,libopengl.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\opengl.dir\linklibs.rsp

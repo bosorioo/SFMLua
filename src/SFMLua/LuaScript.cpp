@@ -7,12 +7,12 @@
 #include <cstring>
 
 #include "SFML/System.hpp"
-#include "LuaScripts/sfmlua.lua.h"
-#include "LuaScripts/simple oop.lua.h"
-#include "LuaScripts/traceback.lua.h"
-#include "SFMLua/LuaScript.h"
-#include "SFMLua/Classes.h"
-#include "SFMLua/Utils.h"
+#include "internal-lua/sfmlua.lua.h"
+#include "internal-lua/oop.lua.h"
+#include "internal-lua/traceback.lua.h"
+#include "sfmlua/LuaScript.h"
+#include "sfmlua/Classes.h"
+#include "sfmlua/Utils.h"
 
 #if defined(_WIN32)
     #if !defined(_WIN32_WINNT) || _WIN32_WINNT < 0x0502
@@ -213,10 +213,10 @@ int LuaScript::sfml_run(int argc, char* args[])
         //return 3;
     }
 
-    if (luaL_loadbuffer(L, lua_script_simple_oop, sizeof(lua_script_simple_oop), "simple oop (internal script)") ||
+    if (luaL_loadbuffer(L, lua_script_oop, sizeof(lua_script_oop), "oop (internal script)") ||
         lua_pcall(L, 0, LUA_MULTRET, 0))
     {
-        LuaScript::cout("internal lua script simple oop.lua initialization failed.");
+        LuaScript::cout("internal lua source 'oop.lua' initialization failed.");
         LuaScript::cout(L);
         //LuaScript::sfml_close(L, false);
         //return 3;
@@ -252,10 +252,20 @@ int LuaScript::sfml_run(int argc, char* args[])
     if (luaL_loadfile(L, entryFile.c_str()))
     {
         error = true;
+
         std::vector<std::string> errSplit = Utils::splitString(lua_tostring(L, -1), ':');
+
         if (errSplit.size() >= 3)
         {
+
             std::string str = "Main file loading fail:\n\t";
+
+            if (errSplit[0].size() == 1) // Path started with something like C:/
+            {
+                errSplit[1].insert(0, errSplit[0] + ':');
+                errSplit.erase(errSplit.begin());
+            }
+
             str += errSplit[2];
             LuaScript::cout(str);
             str = "\t "; str += Utils::getFileName(errSplit[0]);
@@ -470,7 +480,7 @@ int LuaScript::LuaFunction_notify(lua_State* L)
 int LuaScript::LuaFunction_improvedPrint(lua_State* L)
 {
     static bool beginOfLine = true;
-    sf::Lock lock(consoleMutex);
+    // sf::Lock lock(consoleMutex);
 
     if (lua_gettop(L) == 0)
     {
@@ -520,12 +530,38 @@ int LuaScript::LuaFunction_improvedPrint(lua_State* L)
             case LUA_TSTRING: {std::cout << lua_tostring(L, i); break;}
             case LUA_TBOOLEAN: {std::cout << (lua_toboolean(L, i) ? "true" : "false"); break;}
             case LUA_TNUMBER: {
-                lua_Number n = lua_tonumber(L, i);
-
-                if (lua_isinteger(L, i) || (lua_Integer)n == n)
-                    std::cout << lua_tointeger(L, i);
+                lua_Number ln = lua_tonumber(L, i);
+                uint64_t ui = static_cast<uint64_t>(ln);
+                 int64_t ii = static_cast< int64_t>(ln);
+                if ((lua_Number)ui == ln)
+                {
+                    std::cout << ui;
+                }
+                else if ((lua_Number)ii == ln)
+                {
+                    std::cout << ii;
+                }
                 else
-                    std::cout << n;
+                {
+                    char buffer[32];
+                    int bytes = snprintf(buffer, sizeof(buffer), "%.8f", ln);
+
+                    while (bytes-- > 0)
+                    {
+                        if (buffer[bytes] == '0' &&
+                            buffer[bytes - 1] != ',' &&
+                            buffer[bytes - 1] != '.')
+                        {
+                            buffer[bytes] = '\0';
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+
+                    std::cout << buffer;
+                }
                 break;
             }
             case LUA_TNIL: {std::cout << "nil"; break;}
@@ -698,6 +734,9 @@ void LuaScript::loadBasicFunctions(lua_State* L)
 
      // System.sleep(number: miliseconds = 10)
     LuaAux::newGlobal(L, "System", "sleep", LuaFunction_systemSleep);
+
+    lua_getglobal(L, "print");
+    lua_setglobal(L, "_print");
 
     // print(...)
     LuaAux::newGlobal(L, "print", LuaFunction_improvedPrint);
@@ -891,6 +930,6 @@ void LuaScript::RegisterFunctions (lua_State* L)
     SFMLuaThread::Register(L);
     lua_opengl(L);
     Network::Register(L);
-    LuaGif::Register(L);
+    Gif::Register(L);
     Graphics::Register(L);
 }

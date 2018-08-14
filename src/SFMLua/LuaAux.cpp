@@ -78,6 +78,7 @@ bool LuaAux::getBool(lua_State* L, int index, bool defaultBool)
 
     return defaultBool;
 }
+
 sf::Color LuaAux::getColor(lua_State* L, int index, bool isOneArg)
 {
     sf::Color color(255, 255, 255, 255);
@@ -174,7 +175,7 @@ std::string LuaAux::getEntryFile(int argc, char* args[])
     return std::string();
 }
 
-std::vector<std::string> LuaAux::splitLuaErrorPath(std::string error)
+std::vector<std::string> LuaAux::splitLuaErrorPath(const std::string& error)
 {
     std::vector<std::string> result;
     unsigned index;
@@ -184,12 +185,12 @@ std::vector<std::string> LuaAux::splitLuaErrorPath(std::string error)
     if (index == std::string::npos)
         return result;
 
-    error = Utils::getPrettyPath(error.erase(index));
+    std::string prettyError = Utils::getPrettyPath(std::string(error).erase(index));
     std::string temp;
 
-    for (index = 0; index < error.size(); index++)
+    for (index = 0; index < prettyError.size(); index++)
     {
-        if (error[index] == SLASH)
+        if (prettyError[index] == SLASH)
         {
             if (!temp.empty())
                 result.push_back(temp);
@@ -197,14 +198,14 @@ std::vector<std::string> LuaAux::splitLuaErrorPath(std::string error)
             temp.clear();
         }
         else
-            temp += error[index];
+            temp += prettyError[index];
     }
 
     return result;
 }
 
 void LuaAux::newClass(lua_State* L, const luaL_Reg* methods, const luaL_Reg* metamethods,
-                      std::string className, lua_CFunction callfunction, bool setGlobal)
+                      const std::string& className, lua_CFunction callfunction, bool setGlobal)
 {
     // This will create a table containing all functions provided with parameter 'methods'.
     // A metatable associated with 'className' will be created with all functions provided with 'metamethods'
@@ -253,43 +254,43 @@ void LuaAux::newClass(lua_State* L, const luaL_Reg* methods, const luaL_Reg* met
         lua_setglobal(L, className.c_str());
 }
 
-void LuaAux::newGlobal(lua_State* L, std::string globalName, lua_CFunction var)
+void LuaAux::newGlobal(lua_State* L, const std::string& globalName, lua_CFunction var)
 {
     lua_pushcfunction(L, var);
     lua_setglobal(L, globalName.c_str());
 }
 
-void LuaAux::newGlobal(lua_State* L, std::string globalName, unsigned var)
+void LuaAux::newGlobal(lua_State* L, const std::string& globalName, unsigned var)
 {
     lua_pushnumber(L, var);
     lua_setglobal(L, globalName.c_str());
 }
 
-void LuaAux::newGlobal(lua_State* L, std::string globalName, int var)
+void LuaAux::newGlobal(lua_State* L, const std::string& globalName, int var)
 {
     lua_pushinteger(L, var);
     lua_setglobal(L, globalName.c_str());
 }
 
-void LuaAux::newGlobal(lua_State* L, std::string globalName, float var)
+void LuaAux::newGlobal(lua_State* L, const std::string& globalName, float var)
 {
     lua_pushnumber(L, var);
     lua_setglobal(L, globalName.c_str());
 }
 
-void LuaAux::newGlobal(lua_State* L, std::string globalName, std::string var)
+void LuaAux::newGlobal(lua_State* L, const std::string& globalName, const std::string& var)
 {
     lua_pushstring(L, var.c_str());
     lua_setglobal(L, globalName.c_str());
 }
 
-void LuaAux::newGlobal(lua_State* L, std::string globalName, void* var)
+void LuaAux::newGlobal(lua_State* L, const std::string& globalName, void* var)
 {
     lua_pushlightuserdata(L, var);
     lua_setglobal(L, globalName.c_str());
 }
 
-void LuaAux::newGlobal(lua_State* L, std::string tableName, std::string globalName, lua_CFunction var)
+void LuaAux::newGlobal(lua_State* L, const std::string& tableName, const std::string& globalName, lua_CFunction var)
 {
     if (tableName.empty())
     {
@@ -310,7 +311,7 @@ void LuaAux::newGlobal(lua_State* L, std::string tableName, std::string globalNa
     lua_setglobal(L, tableName.c_str());
 }
 
-void LuaAux::newGlobal(lua_State* L, std::string tableName, std::string globalName, unsigned var)
+void LuaAux::newGlobal(lua_State* L, const std::string& tableName, const std::string& globalName, unsigned var)
 {
     if (tableName.empty())
     {
@@ -331,7 +332,7 @@ void LuaAux::newGlobal(lua_State* L, std::string tableName, std::string globalNa
     lua_setglobal(L, tableName.c_str());
 }
 
-void LuaAux::newGlobal(lua_State* L, std::string tableName, std::string globalName, int var)
+void LuaAux::newGlobal(lua_State* L, const std::string& tableName, const std::string& globalName, int var)
 {
     if (tableName.empty())
     {
@@ -352,7 +353,7 @@ void LuaAux::newGlobal(lua_State* L, std::string tableName, std::string globalNa
     lua_setglobal(L, tableName.c_str());
 }
 
-void LuaAux::newGlobal(lua_State* L, std::string tableName, std::string globalName, float var)
+void LuaAux::newGlobal(lua_State* L, const std::string& tableName, const std::string& globalName, float var)
 {
     if (tableName.empty())
     {
@@ -373,7 +374,7 @@ void LuaAux::newGlobal(lua_State* L, std::string tableName, std::string globalNa
     lua_setglobal(L, tableName.c_str());
 }
 
-void LuaAux::newGlobal(lua_State* L, std::string tableName, std::string globalName, std::string var)
+void LuaAux::newGlobal(lua_State* L, const std::string& tableName, const std::string& globalName, const std::string& var)
 {
     if (tableName.empty())
     {
@@ -394,7 +395,7 @@ void LuaAux::newGlobal(lua_State* L, std::string tableName, std::string globalNa
     lua_setglobal(L, tableName.c_str());
 }
 
-void LuaAux::newGlobal(lua_State* L, std::string tableName, std::string globalName, void* var)
+void LuaAux::newGlobal(lua_State* L, const std::string& tableName, const std::string& globalName, void* var)
 {
     if (tableName.empty())
     {
@@ -415,7 +416,7 @@ void LuaAux::newGlobal(lua_State* L, std::string tableName, std::string globalNa
     lua_setglobal(L, tableName.c_str());
 }
 
-void LuaAux::setGlobal(lua_State* L, std::string tableName, std::string globalName)
+void LuaAux::setGlobal(lua_State* L, const std::string& tableName, const std::string& globalName)
 {
     if (tableName.empty())
     {
@@ -436,4 +437,12 @@ void LuaAux::setGlobal(lua_State* L, std::string tableName, std::string globalNa
     lua_setfield(L, -2, globalName.c_str());
     lua_setglobal(L, tableName.c_str());
     lua_pop(L, 1);
+}
+
+LuaData LuaAux::getTableField(lua_State* L, int tableIndex, const std::string& fieldName)
+{
+    lua_getfield(L, tableIndex, fieldName.c_str());
+    LuaData data(L, -1);
+    lua_pop(L, 1);
+    return data;
 }
