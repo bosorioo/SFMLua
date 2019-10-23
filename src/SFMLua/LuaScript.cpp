@@ -5,14 +5,16 @@
 #include <sstream>
 #include <cstdlib>
 #include <cstring>
+#include <vector>
+#include <algorithm>
 
 #include "SFML/System.hpp"
 #include "internal-lua/sfmlua.lua.h"
 #include "internal-lua/oop.lua.h"
 #include "internal-lua/traceback.lua.h"
-#include "sfmlua/LuaScript.h"
-#include "sfmlua/Classes.h"
-#include "sfmlua/Utils.h"
+#include "SFMLua/LuaScript.h"
+#include "SFMLua/Classes.h"
+#include "SFMLua/Utils.h"
 
 #if defined(_WIN32)
     #if !defined(_WIN32_WINNT) || _WIN32_WINNT < 0x0502
@@ -291,14 +293,17 @@ std::string LuaScript::sfml_init(lua_State* L, int argc, char* args[])
 {
     std::string entryFile = LuaAux::getEntryFile(argc, args);
     std::string globalStrings[3];
+    std::vector<std::string> argsvector(args, args + argc);
 
     LuaAux::newGlobal(L, "WorkDir", (globalStrings[0] = Utils::getDirectory(entryFile)));
     LuaAux::newGlobal(L, "ExecDir", (globalStrings[1] = Utils::getDirectory(*args)));
     LuaAux::newGlobal(L, "ExeName", (globalStrings[2] = Utils::getFileName(*args)));
 
-    logFile = globalStrings[1] + "sfml log.txt";
-    log_file.open(logFile.c_str(), std::ios::out);
-    notifyLogFile("Lua script entry file: " + entryFile);
+    if (std::find(argsvector.begin(), argsvector.end(), "--no-log") == argsvector.end()) {
+        logFile = globalStrings[1] + "sfml log.txt";
+        log_file.open(logFile.c_str(), std::ios::out);
+        notifyLogFile("Lua script entry file: " + entryFile);
+    }
 
     std::string argumentsNotification("\nArguments:");
 

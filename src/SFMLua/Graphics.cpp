@@ -3,6 +3,7 @@
 #include "SFMLua/Classes.h"
 #include "SFMLua/Utils.h"
 #include <SFML/OpenGL.hpp>
+#include <cmath>
 
 sf::Font g_Font;
 sf::RenderTarget* g_Target = nullptr;

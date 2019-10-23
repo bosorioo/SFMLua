@@ -3,6 +3,7 @@
 #include "BLAKE/blake2.h"
 #include <fstream>
 #include <cstring>
+#include <cmath>
 #include <sys/stat.h>
 
 void Image::Register(lua_State* L)
@@ -436,7 +437,7 @@ int Image::LoadFromFile(lua_State* L)
     if (!image)
         return 0;
 
-    lua_pushboolean(L, image->loadFromFile(sf::String(lua_tostring(L, 2))));
+    lua_pushboolean(L, image->loadFromFile(lua_tostring(L, 2)));
     return 1;
 }
 

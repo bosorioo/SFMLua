@@ -21,6 +21,131 @@
 #include "LuaGL/LuaGL.h"
 #include "LuaGL/LuaGL-macros.h"
 
+const char * check_string(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TSTRING)
+      luaL_typerror(L, n, lua_typename(L, LUA_TSTRING));
+   return (const char *) lua_tostring(L, n);
+}
+
+const void * check_lightuserdata(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TLIGHTUSERDATA)
+      luaL_typerror(L, n, "lightuserdata");
+   return (const void *) lua_touserdata(L, n);
+}
+
+GLboolean check_GLboolean(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TNUMBER)
+      luaL_typerror(L, n, "number(GLboolean)");
+   return (GLboolean) lua_tonumber(L, n);
+}
+
+GLbyte check_GLbyte(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TNUMBER)
+      luaL_typerror(L, n, "number(GLbyte)");
+   return (GLbyte) lua_tonumber(L, n);
+}
+
+GLubyte check_GLubyte(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TNUMBER)
+      luaL_typerror(L, n, "number(GLubyte)");
+   return (GLubyte) lua_tonumber(L, n);
+}
+
+GLshort check_GLshort(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TNUMBER)
+      luaL_typerror(L, n, "number(GLshort)");
+   return (GLshort) lua_tonumber(L, n);
+}
+
+GLushort check_GLushort(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TNUMBER)
+      luaL_typerror(L, n, "number(GLushort)");
+   return (GLushort) lua_tonumber(L, n);
+}
+
+GLint check_GLint(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TNUMBER)
+      luaL_typerror(L, n, "number(GLint)");
+   return (GLint) lua_tonumber(L, n);
+}
+
+GLuint check_GLuint(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TNUMBER)
+      luaL_typerror(L, n, "number(GLuint)");
+   return (GLuint) lua_tonumber(L, n);
+}
+
+GLsizei check_GLsizei(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TNUMBER)
+      luaL_typerror(L, n, "number(GLsizei)");
+   return (GLsizei) lua_tonumber(L, n);
+}
+
+GLenum check_GLenum(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TNUMBER)
+      luaL_typerror(L, n, "number(GLenum)");
+   return (GLenum) lua_tonumber(L, n);
+}
+
+GLbitfield check_GLbitfield(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TNUMBER)
+      luaL_typerror(L, n, "number(GLbitfield)");
+   return (GLbitfield) lua_tonumber(L, n);
+}
+
+GLfloat check_GLfloat(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TNUMBER)
+      luaL_typerror(L, n, "number(GLfloat)");
+   return (GLfloat) lua_tonumber(L, n);
+}
+
+GLdouble check_GLdouble(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TNUMBER)
+      luaL_typerror(L, n, "number(GLdouble)");
+   return (GLdouble) lua_tonumber(L, n);
+}
+
+int check_int(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TNUMBER)
+      luaL_typerror(L, n, "number(int)");
+   return (int) lua_tonumber(L, n);
+}
+
+unsigned int check_uint(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TNUMBER)
+      luaL_typerror(L, n, "number(unsigned int)");
+   return (unsigned int) lua_tonumber(L, n);
+}
+
+float check_float(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TNUMBER)
+      luaL_typerror(L, n, "number(float)");
+   return (float) lua_tonumber(L, n);
+}
+
+double check_double(lua_State *L, int n)
+{
+   if (lua_type(L,n) != LUA_TNUMBER)
+      luaL_typerror(L, n, "number(double)");
+   return (double) lua_tonumber(L, n);
+}
 
 //Specify vertices or rectangles:
 

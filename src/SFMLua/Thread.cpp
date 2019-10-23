@@ -14,6 +14,7 @@ extern "C" {
 #include <condition_variable>
 #include <mutex>
 #include <vector>
+#include <functional>
 
 std::string luaInitString;
 std::vector<SFMLuaThread::LuaThread*> threads;

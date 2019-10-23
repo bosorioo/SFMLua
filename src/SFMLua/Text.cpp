@@ -77,7 +77,7 @@ int Text::GetString(lua_State* L)
     if (!txt)
         return 0;
 
-    lua_pushstring(L, ((std::string)txt->getString()).c_str());
+    lua_pushstring(L, reinterpret_cast<const char*>(txt->getString().toUtf8().c_str()));
     return 1;
 }
 

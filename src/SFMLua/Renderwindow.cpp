@@ -469,7 +469,7 @@ int Window::GetHandle(lua_State* L)
     if (!window)
         return 0;
 
-    lua_pushlightuserdata(L, window->getSystemHandle());
+    lua_pushlightuserdata(L, reinterpret_cast<void*>(window->getSystemHandle()));
     return 1;
 }
 
